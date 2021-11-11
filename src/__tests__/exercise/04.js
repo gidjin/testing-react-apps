@@ -24,6 +24,7 @@ test('submitting the form calls onSubmit with username and password', () => {
     username: "chucknorris",
     password: "youdontaskchuckforapassword",
   })
+  expect(handleSubmit).toHaveBeenCalledTimes(1)
 })
 
 /*
